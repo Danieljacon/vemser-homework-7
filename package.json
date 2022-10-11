@@ -1,0 +1,33 @@
+{
+  "name": "vemser-homework-7",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "webpack serve --mode development --config webpack.config.js",
+    "build-dev": "webpack --mode development --config webpack.config.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Danieljacon/vemser-homework-7.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Danieljacon/vemser-homework-7/issues"
+  },
+  "homepage": "https://github.com/Danieljacon/vemser-homework-7#readme",
+  "dependencies": {
+    "copy-webpack-plugin": "^11.0.0",
+    "css-loader": "^6.7.1",
+    "html-webpack-plugin": "^5.5.0",
+    "mini-css-extract-plugin": "^2.6.1",
+    "sass": "^1.55.0",
+    "sass-loader": "^13.1.0",
+    "webpack": "^5.74.0",
+    "webpack-cli": "^4.10.0",
+    "webpack-dev-server": "^4.11.1"
+  }
+}
