@@ -1,0 +1,79 @@
+@mixin align-itens-center {
+    display: flex;
+    align-items: center;
+}
+
+.page-profile {
+    background-color: #eff3f8;
+
+    .profile-container {
+        max-width: 85vw;
+        margin: 0 auto;
+        margin-top: 70px;
+
+        .profile {
+            width: 100%;
+            background-color: aquamarine;
+
+            .profile-header {
+                .profile-banner {
+                    height: 150px;
+                    gap: 3%;
+                    background: url("../assets/images/background-dbc.png"), linear-gradient(5deg, #3b73a3 30%, #7a9547 90%);
+                    @include align-itens-center();
+                    img {
+                        width: 130px;
+                        height: 130px;
+                        border-radius: 50%;
+                        border: 2px solid white;
+                        margin-left: 3%;
+                    }
+                }
+                .profile-info {
+                    color: white;
+                    line-height: 1.5;
+                }
+            }
+
+            .info {
+
+                .info-1 {
+                    display: flex;
+                    justify-content: space-between;
+                    height: 50%;
+                    padding: 15px;
+                    .name-role {
+                        .name {
+                            font-weight: 700;
+                            font-size: 1.063rem;
+                            padding-bottom: 10px;
+                        }                     
+                    }
+                    .other-info {
+                        width: 80%;
+                        display: flex;
+                        justify-content: space-between;
+                        gap: 10px;
+
+                        .option {
+                            display: flex;
+                            flex-direction: column;
+                        }
+                    }
+
+                }
+
+                .info-2 {
+                    height: 50%;
+                }
+
+            }
+
+
+
+
+
+
+        }
+    }
+}

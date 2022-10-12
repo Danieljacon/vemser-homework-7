@@ -11,7 +11,7 @@
     <title>Homework 7 - Profile</title>
 </head>
 
-<body>
+<body class="page-profile">
 
     <header class="header">
         <nav class="header-container">
@@ -47,8 +47,85 @@
         </nav>
     </header>
 
-    <main class="page-profile">
-        <i class="fa-solid fa-book"></i>
+    <main class="profile-container">
+
+        <div class="profile">
+
+            <section class="profile-header">
+
+                <div class="profile-banner">
+                    <img src="./assets/images/profile-picture.webp" alt="Foto de perfil do colaborador" class="photo">
+                    <div class="profile-info">
+                        <p>Login: user.name</p>
+                        <p>Email: mail@dbccompany.com.br</p>
+                        <p>Nascimento: 01/01/2001</p>
+                    </div>
+                </div>
+
+                <div class="info">
+
+                    <div class="info-1">
+
+                        <div class="name-role">
+                            <p class="name">Nome completo</p>
+                            <p class="role">Cargo</p>
+                        </div>
+
+                        <div class="other-info">
+                            <div class="option">
+                                <label for="pronome">Pronome</label>
+                                <select name="pronome" id="pronome">
+                                    <option value="">Ela/Dela</option>
+                                    <option selected value="">Ele/Dele</option>
+                                    <option value="">Outro</option>
+                                </select>
+                            </div>
+                            <div class="option">
+                                <label for="gerente">Gerente do Recurso</label>
+                                <input disabled name="gerente" type="text" value="Nome do Gerente">
+                            </div>
+                            <div class="option">
+                                <label for="telefone">Telefone</label>
+                                <input name="telefone" type="text" value="(21) 00000-0000">
+                            </div>
+                            <div class="option">
+                                <label for="ramal">Ramal</label>
+                                <input name="ramal" type="text" placeholder="Ramal">
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="info-2">
+
+
+
+
+
+                    </div>
+
+
+
+
+
+
+                </div>
+
+            </section>
+            
+            <section class="profile-adress"></section>
+
+            <section class="profile-feedback"></section>
+
+            <section class="profile-skills"></section>
+
+            <i class="fa-solid fa-book"></i>
+
+
+
+
+        </div>
+
     </main>
 
 </body>
