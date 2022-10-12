@@ -8,8 +8,27 @@
   align-items: center;
 }
 
+@mixin container-sections {
+  box-shadow: 0px 2px 6px rgb(0 0 0 / 10%);
+  border-radius: 5px;
+  background-color: white;
+}
+
 .page-home {
   background-color: #eff3f8;
+
+  .section-title {
+    h2 {
+      font-size: 0.75rem;
+      text-transform: uppercase;
+      font-weight: 500;
+      padding: 16px;
+      border-bottom: 1px solid #e0e0e0;
+      background-color: white;
+      @include font-apple();
+    }
+  }
+
   .main {
     max-width: 1160px;
     margin: 0 auto;
@@ -21,20 +40,7 @@
     .noticias {
       width: 100%;
       max-width: 675px;
-      box-shadow: 0px 2px 6px rgb(0 0 0 / 10%);
-      border-radius: 5px;
-      background-color: white;
-
-      .noticias-recentes {
-        h2 {
-          font-size: 0.75rem;
-          text-transform: uppercase;
-          font-weight: 500;
-          padding: 16px;
-          border-bottom: 1px solid #e0e0e0;
-          @include font-apple();
-        }
-      }
+      @include container-sections();
 
       .cards-noticias {
         padding: 16px;
@@ -46,7 +52,7 @@
           overflow: hidden !important;
           display: flex;
           margin-bottom: 16px;
-          box-shadow: 0px 2px 4px rgb(0 0 0 / 10%);
+          box-shadow: 0px 2px 4px rgb(0 0 0 / 15%);
 
           .image {
             width: 200px;
@@ -98,7 +104,7 @@
                 }
 
                 i {
-                    opacity: .6;
+                  opacity: 0.6;
                 }
 
                 .heart {
@@ -113,9 +119,55 @@
     }
 
     .aside {
-      background-color: green;
       width: 100%;
       max-width: 450px;
+
+      .sistemas {
+        @include container-sections();
+
+        .button-group {
+          padding: 16px;
+          display: grid;
+          grid-template-columns: repeat(3, 120px);
+          place-content: center;
+          gap: 12px;
+
+          .button {
+            height: 84px;
+            color: #33a76f;
+            background-color: white;
+            font-size: 0.75rem;
+            font-weight: bold;
+            text-align: center;
+            display: inline-block;
+            border: none;
+            border-radius: 6px;
+            outline: none;
+            box-shadow: 0px 2px 6px rgb(0 0 0 / 15%);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            transition: all 0.2s ease-in-out;
+
+            i {
+              font-size: 1.875rem;
+              margin-bottom: 4px;
+            }
+
+            &:hover {
+              background: linear-gradient(
+                to right,
+                #2ba962 0%,
+                #2e6a99 98%,
+                #2e6a99 100%
+              );
+              color: white;
+              cursor: pointer;
+            }
+          }
+        }
+      }
     }
   }
 }
