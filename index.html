@@ -1,13 +1,50 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Homework - 7</title>
 </head>
-<body>
-    <h1>teste</h1>
-    <img src="./assets/images/google-image.png" alt="teste">
+
+<body class="page-home">
+    <header class="header">
+        <nav class="header-container">
+            <div class="header-col-1">
+                <i class="logo"><img src="./assets/images/logo-dbc.png"></i>
+                <span class="menu">
+                    <i class="fa-solid fa-bars"></i>
+                    <span>Início</span>
+                </span>
+                <span class="search">
+                    <input class="search-bar" type="search" placeholder="Pesquisar">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </span>
+            </div>
+            <div class="header-col-2">
+                <i class="bell fa-solid fa-bell"></i>
+                <label class="dropdown-perfil" for="dropdown-menu">
+                    <i class="user fa-solid fa-user-circle"></i>
+                    <i class="arrow fa-solid fa-chevron-down"></i>
+
+                    <ul>
+                        <small>user.name</small>
+                        <li>
+                            <a href="#">
+                                <i class="fa-solid fa-bell"></i>
+                                <p>Meu perfil</p>
+                            </a>
+                        </li>
+                    </ul>
+                </label>
+                <input type="checkbox" id="dropdown-menu" value="active">
+            </div>
+        </nav>
+    </header>
 </body>
+
 </html>
