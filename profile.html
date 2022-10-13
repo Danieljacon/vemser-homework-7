@@ -19,7 +19,7 @@
                 <a href="./index.html"><i class="logo"><img src="./assets/images/logo-dbc.png"></a></i>
                 <span class="menu">
                     <i class="fa-solid fa-bars"></i>
-                    <span>Início</span>
+                    <span>Pessoas - Colaborador</span>
                 </span>
                 <span class="search">
                     <input class="search-bar" type="search" placeholder="Pesquisar">
@@ -64,11 +64,11 @@
 
                 <div class="info">
 
-                    <div class="info-1">
+                    <div class="info-top-container">
 
                         <div class="name-role">
                             <p class="name">Nome completo</p>
-                            <p class="role">Cargo</p>
+                            <p class="role">Nome do cargo</p>
                         </div>
 
                         <div class="other-info">
@@ -96,33 +96,230 @@
 
                     </div>
 
-                    <div class="info-2">
+                    <div class="info-bottom-container">
 
+                        <div class="empty-container">
+                            -
+                        </div>
+
+                        <div class="checkbox-container-box">
+
+                            <div class="checkbox-column">
+                                <div class="checkbox-container">
+                                    <input type="checkbox" name="cargo-1" id="cargo-1" disabled>
+                                    <label for="cargo-1" aria-disabled="true">
+                                        Gerente Comercial
+                                    </label>
+                                </div>
+                                <div class="checkbox-container">
+                                    <input type="checkbox" name="cargo-2" id="cargo-2" disabled>
+                                    <label for="cargo-2" aria-disabled="true">
+                                        Gerente
+                                    </label>
+                                </div>
+                                <div class="checkbox-container">
+                                    <input type="checkbox" name="cargo-3" id="cargo-3" disabled>
+                                    <label for="cargo-3" aria-disabled="true">
+                                        Líder
+                                    </label>
+                                </div>
+                            </div>
+
+                            <div class="checkbox-column">
+                                <div class="checkbox-container">
+                                    <input type="checkbox" name="cargo-4" id="cargo-4" disabled>
+                                    <label for="cargo-4" aria-disabled="true">
+                                        Gerente de Operações
+                                    </label>
+                                </div>
+                                <div class="checkbox-container">
+                                    <input type="checkbox" name="cargo-5" id="cargo-5" disabled>
+                                    <label for="cargo-5" aria-disabled="true">
+                                        Líder de RH
+                                    </label>
+                                </div>
+                            </div>
+
+                            <div class="checkbox-column">
+                                <div class="checkbox-container">
+                                    <input type="checkbox" name="dependentes" id="dependentes">
+                                    <label  class="label-ativa" for="dependentes">
+                                        Tenho filho(a)
+                                    </label>
+                                </div>
+                            </div>
+
+                            <div class="checkbox-column-icon">
+                                <div class="checkbox-container label-container">
+                                    <label  class="label-ativa" for="ativo">
+                                        Ativo
+                                    </label>
+                                    <i class="fa-solid fa-toggle-on"></i>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </section>
+            
+            <section class="profile-address">
+
+                <div class="address-title">
+                    <h2>Endereço</h2>
+                </div>
+
+                <div class="address-container-top">
+                        
+                    <div class="address-container">
+                        <label for="cep">CEP</label>
+                        <input name="cep" id="cep" type="text" value="00000-000">
+                    </div>
+
+                    <div class="address-container">
+                        <label for="logradouro">Tipo de Logradouro</label>
+                        <select name="logradouro" id="logradouro">
+                            <option value="">Rua</option>
+                            <option value="">Avenida</option>
+                            <option value="">Travessa</option>
+                            <option value="">Estrada</option>
+                            <option value="">Rodovia</option>
+                            <option value="">Praça</option>
+                            <option value="">Alameda</option>
+                            <option value="">Outro</option>
+                        </select>
+                    </div>
+
+                    <div class="address-container" style="width: 400px;">
+                        <label for="rua">Rua</label>
+                        <input name="rua" id="rua" type="text" value="Rua do Maneco">
+                    </div>
+
+                    <div class="address-container">
+                        <label for="numero">Número</label>
+                        <input name="numero" id="numero" type="text" value="0">
+                    </div>
+
+                    <div class="address-container">
+                        <label for="complemento">Complemento</label>
+                        <input name="complemento" id="complemento" type="text" value="Casa 1">
+                    </div>
+
+                </div>
+
+                <div class="address-container-bottom">
+
+                    <div class="address-container"  style="width: 400px;">
+                        <label for="bairro">Bairro</label>
+                        <input name="bairro" id="bairro" type="text" value="Barra da Tijuca">
+                    </div>
+
+                    <div class="address-container">
+                        <label for="cidade">Cidade</label>
+                        <input name="cidade" id="cidade" type="text" value="Rio de Janeiro">
+                    </div>
+
+                    <div class="address-container">
+                        <label for="estado">Estado</label>
+                        <input name="estado" id="estado" type="text" value="RJ">
+                    </div>
+
+                </div>
+
+            </section>
+
+            <section class="profile-bottom">
+            
+                <section class="profile-feedback">
+
+                    <h2 class="feedback-title">
+                        Veja o que nossos colegas estão falando sobre Nome
+                    </h2>
+
+                    <div class="feedback-menu">
+                        <div class="feedback-recebido">
+                            Recebidos
+                        </div>
+                        <div class="feedback-concedido">
+                            Concedidos
+                        </div>
+                    </div>
+
+                    <p class="feedback-text">
+                        Nenhum feedback recebido ainda.
+                    </p>
+
+                </section>
+
+                <section class="profile-skills">
+
+                    <div class="skills-header">
+
+                        <h2 class="skills-title">
+                            <i class="fa-solid fa-book"></i>
+                            Conhecimentos
+                        </h2>
+
+                        <button class="botao-adicionar">
+                            <i class="fa fa-plus"></i>
+                            Adicionar
+                        </button>
+
+                    </div>
+
+                    <div class="skills-range">
+
+                        <div class="range-box">
+                            <form action="#">
+                                <div>
+                                    <p>HTML / CSS</p>
+                                    <input type="range" min="0" max="100" />
+                                </div>
+                            </form>
+                            <i class="fa fa-close" title="Remover"></i>
+                        </div>
+
+                        <div class="range-box">
+                            <form action="#">
+                                <div>
+                                    <p>Figma</p>
+                                    <input type="range" min="0" max="100" />
+                                </div>
+                            </form>
+                            <i class="fa fa-close" title="Remover"></i>
+                        </div>
+                        
+                        <div class="range-box">
+                            <form action="#">
+                                <div>
+                                    <p>UX / UI</p>
+                                    <input type="range" min="0" max="100" />
+                                </div>
+                            </form>
+                            <i class="fa fa-close" title="Remover"></i>
+                        </div>
+
+                        <div class="range-box">
+                            <form action="#">
+                                <div>
+                                    <p>JavaScript</p>
+                                    <input type="range" min="0" max="100" />
+                                </div>
+                            </form>
+                            <i class="fa fa-close" title="Remover"></i>
+                        </div>
 
 
 
 
                     </div>
 
-
-
-
-
-
-                </div>
+                </section>
 
             </section>
-            
-            <section class="profile-adress"></section>
-
-            <section class="profile-feedback"></section>
-
-            <section class="profile-skills"></section>
-
-            <i class="fa-solid fa-book"></i>
-
-
-
 
         </div>
 
