@@ -1,13 +1,162 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Homework - 7</title>
 </head>
-<body>
-    <h1>teste</h1>
-    <img src="./assets/images/google-image.png" alt="teste">
+
+<body class="page-home">
+    <header class="header">
+        <nav class="header-container">
+            <div class="header-col-1">
+                <a href="./index.html"><i class="logo"><img src="./assets/images/logo-dbc.png"></a></i>
+                <span class="menu">
+                    <i class="fa-solid fa-bars"></i>
+                    <span>Início</span>
+                </span>
+                <span class="search">
+                    <input class="search-bar" type="search" placeholder="Pesquisar">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </span>
+            </div>
+            <div class="header-col-2">
+                <i class="bell fa-solid fa-bell"></i>
+                <label class="dropdown-perfil" for="dropdown-menu">
+                    <i class="user fa-solid fa-user-circle"></i>
+                    <i class="arrow fa-solid fa-chevron-down"></i>
+
+                    <ul>
+                        <small>user.name</small>
+                        <li>
+                            <a href="./profile.html">
+                                <i class="fa-solid fa-bell"></i>
+                                <p>Meu perfil</p>
+                            </a>
+                        </li>
+                    </ul>
+                </label>
+                <input type="checkbox" id="dropdown-menu" value="active">
+            </div>
+        </nav>
+    </header>
+
+    <div class="main">
+        <section class="noticias">
+            <span class="section-title">
+                <h2>notícias recentes</h2>
+            </span>
+            <div class="cards-noticias">
+                <div class="card">
+                    <img class="image" src="./assets/images/laboral-de-volta.PNG" alt="imagem aleatória">
+                    <div class="texts">
+                        <h5>A laboral está de volta!</h5>
+                        <p>Depois de uma pequena pausa, estamos de volta no formato híbrido! Agora, nossos encontros
+                            poderão ser presenciais na nossa sede, mas sempre com transmissão ao vivo para quem só pode
+                            ou prefere acompanhar online.</p>
+                        <small>Anote na agenda:</small>
+                        <div>
+                            <small>07/10/2022</small>
+                            <span class="icons">
+                                <i class="heart fa-regular fa-heart"></i>
+                                <small>7</small>
+                                <i class="fa-solid fa-comments"></i>
+                                <small>0</small>
+                                <i class="fa-solid fa-eye"></i>
+                                <small>26</small>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <img class="image" src="./assets/images/workshop-felipe.PNG" alt="imagem aleatória">
+                    <div class="texts">
+                        <h5>DBC Impact de outubro!</h5>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Itaque consequuntur dolore
+                            consectetur, amet numquam quibusdam quia accusamus cumque qui quisquam tenetur ea, sit,
+                            velit eaque aut. Molestias aspernatur commodi in!</p>
+                        <small>Anote na agenda:</small>
+                        <div>
+                            <small>02/09/2022</small>
+                            <span class="icons">
+                                <i class="heart fa-regular fa-heart"></i>
+                                <small>22</small>
+                                <i class="fa-solid fa-comments"></i>
+                                <small>5</small>
+                                <i class="fa-solid fa-eye"></i>
+                                <small>45</small>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <article class="aside">
+            <aside class="sistemas">
+                <span class="section-title">
+                    <h2>Sistemas e processos</h2>
+                </span>
+                <div class="button-group">
+                    <button class="button">
+                        <i class="fa-solid fa-users"></i>
+                        Contatos
+                    </button>
+                    <button class="button">
+                        <i class="fa-solid fa-clock"></i>
+                        Portal Metadados
+                    </button>
+                    <button class="button">
+                        <i class="fa-solid fa-brain"></i>
+                        BI - DBC
+                    </button>
+                    <button class="button">
+                        <i class="fa-solid fa-envelope"></i>
+                        Emails
+                    </button>
+                    <button class="button">
+                        <i class="fa-solid fa-screwdriver-wrench"></i>
+                        CSC
+                    </button>
+                    <button class="button">
+                        <i class="fa-solid fa-folder-open"></i>
+                        Documentos DBC
+                    </button>
+                    <button class="button">
+                        <i class="fa-solid fa-cloud"></i>
+                        File Cloud
+                    </button>
+                </div>
+            </aside>
+            <aside class="ultimos-aniversarios">
+                <span class="section-title">
+                    <h2>Últimos aniversários</h2>
+                </span>
+                <div class="aniversarios">
+                    <div class="card">
+                        <img class="image" src="./assets/images/no-user-img.jpeg" alt="imagem aleatória">
+                        <div class="texts">
+                            <h5>Arthur Mattos Da Silva</h5>
+                            <p>arthur.mattos@dbccompany.com.br</p>
+                            <small><i class="fa-solid fa-cake-candles"></i> 09 de outubro</small>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img class="image" src="./assets/images/no-user-img.jpeg" alt="imagem aleatória">
+                        <div class="texts">
+                            <h5>Gabriela ferreira duarte</h5>
+                            <p>gabriela.duarte@dbccompany.com.br</p>
+                            <small><i class="fa-solid fa-cake-candles"></i> 9 de outubro</small>
+                        </div>
+                    </div>
+                </div>
+            </aside>
+        </article>
+    </div>
 </body>
+
 </html>

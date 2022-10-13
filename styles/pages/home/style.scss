@@ -1,0 +1,224 @@
+@mixin font-apple {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+@mixin align-itens-center {
+  display: flex;
+  align-items: center;
+}
+
+@mixin container-sections {
+  box-shadow: 0px 2px 6px rgb(0 0 0 / 10%);
+  border-radius: 5px;
+  background-color: white;
+}
+
+.page-home {
+  background-color: #eff3f8;
+
+  .section-title {
+    h2 {
+      font-size: 0.75rem;
+      text-transform: uppercase;
+      font-weight: 500;
+      padding: 16px;
+      border-bottom: 1px solid #e0e0e0;
+      background-color: white;
+      @include font-apple();
+    }
+  }
+
+  .main {
+    max-width: 1140px;
+    margin: 0 auto;
+
+    display: flex;
+    gap: 16px;
+    margin-top: 18px;
+    padding: 50px 0 40px 0;
+
+    .noticias {
+      width: 100%;
+      max-width: 675px;
+      height: fit-content;
+      @include container-sections();
+
+      .cards-noticias {
+        padding: 16px;
+        display: flex;
+        flex-direction: column;
+
+        .card {
+          border-radius: 5px;
+          overflow: hidden !important;
+          display: flex;
+          margin-bottom: 16px;
+          box-shadow: 0px 2px 4px rgb(0 0 0 / 15%);
+
+          &:hover {
+              box-shadow: 0px 2px 4px rgb(0 0 0 / 45%);
+              cursor: pointer;
+          }
+
+          .image {
+            width: 200px;
+            height: 200px;
+          }
+
+          .texts {
+            padding: 8px 16px 8px 16px;
+
+            h5 {
+              font-size: 1rem;
+              font-weight: 500;
+              margin-bottom: 10px;
+              @include font-apple();
+            }
+
+            > p {
+              font-size: 0.9rem;
+              font-weight: 400;
+              line-height: 1.5;
+              opacity: 1;
+              margin-bottom: 16px;
+              @include font-apple();
+            }
+
+            > small {
+              font-weight: 700;
+              font-size: 0.9rem;
+              @include font-apple();
+            }
+
+            > div {
+              margin-top: 12px;
+              display: flex;
+              justify-content: space-between;
+
+              small {
+                font-size: 0.8125rem;
+                opacity: 0.7;
+              }
+              span {
+                @include align-itens-center();
+                @include font-apple();
+
+                small {
+                  font-size: 0.8rem;
+                  opacity: 0.9;
+                  padding: 0 6px 0 4px;
+                }
+
+                i {
+                  opacity: 0.6;
+                }
+
+                .heart {
+                  color: red;
+                  opacity: 1;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .aside {
+      width: 100%;
+      max-width: 450px;
+
+      .sistemas {
+        @include container-sections();
+
+        .button-group {
+          padding: 16px;
+          display: grid;
+          grid-template-columns: repeat(3, 120px);
+          place-content: center;
+          gap: 18px;
+
+          .button {
+            height: 84px;
+            color: #33a76f;
+            background-color: white;
+            font-size: 0.75rem;
+            font-weight: bold;
+            text-align: center;
+            display: inline-block;
+            border: none;
+            border-radius: 6px;
+            outline: none;
+            box-shadow: 0px 2px 6px rgb(0 0 0 / 15%);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            transition: all 0.2s ease-in-out;
+
+            i {
+              font-size: 1.875rem;
+              margin-bottom: 4px;
+            }
+
+            &:hover {
+              background: linear-gradient(
+                to right,
+                #2ba962 0%,
+                #2e6a99 98%,
+                #2e6a99 100%
+              );
+              color: white;
+              cursor: pointer;
+            }
+          }
+        }
+      }
+
+      .ultimos-aniversarios {
+        @include container-sections();
+        margin-top: 16px;
+
+        .aniversarios {
+          display: flex;
+          flex-direction: column;
+
+          .card {
+            display: grid;
+            grid-template-columns: 64px 1fr;
+            gap: 23px;
+            padding: 20px 23px 20px 23px;
+            border-bottom: 1px solid #e0e0e0;
+
+            img {
+              width: 100%;
+              max-width: 64px;
+              max-height: 64px;
+              border-radius: 50px;
+            }
+
+            h5 {
+                @include font-apple();
+                font-size: 1rem;
+                opacity: .8;
+                font-weight: 500;
+                margin-bottom: 8px
+            }
+
+            p {
+                @include font-apple();
+                font-size: .9rem;
+            }
+
+            small {
+                @include font-apple();
+                font-size: .9rem;
+                opacity: .8;
+            }
+          }
+        }
+      }
+    }
+  }
+}
